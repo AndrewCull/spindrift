@@ -798,6 +798,12 @@ body {
     line-height: 1;
     opacity: .2; }
 
+.space {
+  padding-right: 1em; }
+
+.border {
+  border-right: 3px solid; }
+
 .statement {
   float: left;
   display: table;
