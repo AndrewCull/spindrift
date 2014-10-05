@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Site styles
+   ========================================================================== */
+
+
+
+body {
+	font-family: avenir, helvetica, sans-serif;
+	margin: 0 auto;
+	max-width: 960px;
+
+}
+
+
+.masthead {
+	background-image: url('/assets/img/spindrift-rowing-feature.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 64em;
+	height: 20em;
+	margin: 0 auto;
+
+
+	h1 {
+		padding-top: 5em;
+		line-height: 1;
+		opacity: .2;
+
+	}
+}
+
+.statement {
+float: left;
+display: table;
+max-width: 50%;
+
+padding-right: 2em;
+
+h2 {
+	text-align: right;
+	padding-right: .25em;
+	border-right: 3px solid;
+}
+}
+
+.explanatinon {
+float: right;
+display: table;
+max-width: 50%;
+height: 50em;
+
+p {
+	padding-left: 1em;
+}
+}
