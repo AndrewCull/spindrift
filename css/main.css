@@ -780,23 +780,16 @@ small, .small {
 /* ==========================================================================
    Site styles
    ========================================================================== */
+html {
+  border-top: 5px solid #111111; }
+
 body {
   font-family: avenir, helvetica, sans-serif;
-  margin: 0 auto;
-  max-width: 960px; }
-
-.masthead {
-  background-image: url("/assets/img/spindrift-rowing-feature.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 64em;
-  height: 20em;
   margin: 0 auto; }
-  .masthead h1 {
-    padding-top: 5em;
-    line-height: 1;
-    opacity: .2; }
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px; }
 
 .space {
   padding-right: 1em; }
@@ -805,21 +798,21 @@ body {
   border-right: 3px solid; }
 
 .statement {
-  float: left;
-  display: table;
-  max-width: 50%;
-  padding-right: 2em; }
-  .statement h2 {
-    text-align: right;
-    padding-right: .25em;
-    border-right: 3px solid; }
+  text-align: right;
+  border-right: none;
+  border-right: 3px solid;
+  padding-right: 1em; }
 
-.explanatinon {
-  float: right;
-  display: table;
-  max-width: 50%;
-  height: 50em; }
-  .explanatinon p {
-    padding-left: 1em; }
+@media screen and (max-width: 480px) {
+  h2 {
+    text-align: center;
+    border-right: none; }
+
+  .button {
+    text-align: center; }
+
+  .statement {
+    text-align: center;
+    border-right: none; } }
 
 /*# sourceMappingURL=main.css.map */
