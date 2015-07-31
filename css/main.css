@@ -588,9 +588,9 @@ small, .small {
  * License: MIT
  *
  *                */
-/* 
+/*
 
-  Base .btn class 
+  Base .btn class
 
   Code:
   <a href="#" class="btn">Default button</a>
@@ -613,8 +613,8 @@ small, .small {
   transition: color .4s, background-color .4s, border .4s; }
 
 .btn:hover {
-  color: #7FDBFF;
-  border: 1px solid #7FDBFF;
+  color: #99ff00;
+  border: 1px solid #99ff00;
   transition: background-color .3s, color .3s, border .3s; }
 
 .btn:active {
@@ -622,10 +622,10 @@ small, .small {
   border: 1px solid #0074D9;
   transition: background-color .3s, color .3s, border .3s; }
 
-/* 
+/*
 
-  Sizes 
-  
+  Sizes
+
   Small  = .btn--s
   Medium = .btn--m
   Large  = .btn--l
@@ -646,9 +646,9 @@ small, .small {
   font-size: 20px;
   border-radius: 0.25em !important; }
 
-/* 
+/*
 
-  Layout utility for responsive buttons 
+  Layout utility for responsive buttons
 
   Code:
   <a href="#" class="btn btn--full">
@@ -798,10 +798,16 @@ h1 {
   border-right: 3px solid; }
 
 .statement {
-  text-align: right;
+  text-align: center;
   border-right: none;
   border-right: 3px solid;
   padding-right: 1em; }
+  @media screen and (min-width: 48em) and (max-width: 64em) {
+    .statement {
+      text-align: right; } }
+  @media screen and (min-width: 64em) {
+    .statement {
+      text-align: right; } }
 
 @media screen and (max-width: 480px) {
   h2 {
@@ -814,5 +820,27 @@ h1 {
   .statement {
     text-align: center;
     border-right: none; } }
+.social {
+  text-align: center; }
+
+.social li {
+  display: inline;
+  list-style: none;
+  padding: 20px; }
+  .social li a {
+    color: black; }
+    .social li a:hover {
+      color: #99ff00; }
+
+.hero {
+  background-image: url(../assets/img/spindrift-icha.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  height: 400px;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

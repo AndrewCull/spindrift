@@ -26,10 +26,19 @@ h1 {
 }
 
 .statement {
-	text-align: right;
+
+	text-align: center;
 	border-right: none;
 	border-right: 3px solid;
 	padding-right: 1em;
+
+	@include break(medium) {
+	text-align: right;
+}
+
+	@include break(large) {
+		text-align: right;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -47,4 +56,21 @@ h2 {
 	border-right: none;
 }
 
+}
+
+.social {
+	text-align: center;
+}
+
+.social li {
+	display: inline;
+	list-style:none;
+	padding: 20px;
+
+	a {
+	color: black;
+	&:hover {
+		color: $green;
+	}
+}
 }
